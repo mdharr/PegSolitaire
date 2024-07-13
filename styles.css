@@ -19,10 +19,11 @@ body {
     grid-template-columns: repeat(7, 50px);
     grid-gap: 5px;
     background-color: #8B4513;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
+    border: 10px solid #63300b;
 }
 
 .peg {
@@ -47,6 +48,21 @@ body {
 
 .selected {
     background-color: #FFA500; /* Highlight selected peg */
+}
+
+#meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#meta div:first-child {
+    padding: 5px 10px;
+}
+
+#meta div:last-child {
+    padding: 5px 10px;
 }
 
 #restart-button {
